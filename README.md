@@ -1,2 +1,3 @@
-# goit-markup-hw-06
-Create FORM
+# goit-markup-hw-07
+
+BEM & SCSS
