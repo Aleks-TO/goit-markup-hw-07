@@ -1,0 +1,38 @@
+.authoriz__list {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.authoriz__item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.authoriz__mail,
+.authoriz__tel + .authoriz__tel {
+  margin-right: 50px;
+}
+.authoriz__mail,
+.authoriz__tel {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.authoriz__mail:focus,
+.authoriz__mail:hover,
+.authoriz__tel:focus,
+.authoriz__tel:hover {
+  color: $accent-text;
+}
+.authoriz__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
