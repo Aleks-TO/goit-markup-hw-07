@@ -148,7 +148,7 @@
           <ul class="team__list list">
             <li class="team__item">
               <img src="./images/imgface-1.jpg" alt="фото сотрудника" width="270" height="260" />
-              <div class="team__text-cont">
+              <div class="team__descriptions">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <span class="team__text">Product Designer</span>
                 <ul class="social-list list">
@@ -209,7 +209,7 @@
             </li>
             <li class="team__item">
               <img src="./images/imgface-2.jpg" alt="фото сотрудника" width="270" height="260" />
-              <div class="team__text-cont">
+              <div class="team__descriptions">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <span class="team__text">Frontend Developer</span>
                 <ul class="social-list list">
@@ -270,7 +270,7 @@
             </li>
             <li class="team__item">
               <img src="./images/imgface-3.jpg" alt="фото сотрудника" width="270" height="260" />
-              <div class="team__text-cont">
+              <div class="team__descriptions">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <span class="team__text">Marketing</span>
                 <ul class="social-list list">
@@ -331,7 +331,7 @@
             </li>
             <li class="team__item">
               <img src="./images/imgface-4.jpg" alt="фото сотрудника" width="270" height="260" />
-              <div class="team__text-cont">
+              <div class="team__descriptions">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <span class="team__text">UI Designer</span>
                 <ul class="social-list list">
@@ -459,16 +459,16 @@
             >
             <ul class="auth__list list">
               <li class="auth__item">
-                <a href="mailto:info@devstudio.com" class="auth__link link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="address__link link">info@devstudio.com</a>
               </li>
               <li class="auth__item">
-                <a href="tel:+380961111111" class="auth__link link">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="footer-socials">
-          <h3 class="footer-socials__text">приєднуйтесь</h3>
+          <h3 class="footer__title">приєднуйтесь</h3>
           <ul class="social-list list">
             <li class="social-list__item">
               <a
@@ -524,14 +524,13 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form" action="">
-          <div class="footer-input">
-          <p class="footer-input__text">Підпишіться на розсилку</p>
-          <div class="footer-input__wrapper">
-            <input type="email" class="footer-input__field" placeholder="E-mail" />
-            <div class="footer-btn__wrapper">
-              <button type="submit" class="footer-btn">
-                Підписатися<svg class="footer-btn__icon" width="24px" height="24px">
+        <form class="subscribe" action="">
+          <p class="footer__title">Підпишіться на розсилку</p>
+          <div class="subscribe__wrapper">
+            <input type="email" class="subscribe__field" placeholder="E-mail" />
+            <div class="subscribe-btn__wrapper">
+              <button type="submit" class="subscribe-btn">
+                Підписатися<svg class="subscribe-btn__icon" width="24px" height="24px">
                   <use href="./images/icons/icons.svg#letter-icon"></use>
                 </svg>
               </button>
@@ -544,51 +543,51 @@
     <!-- -----MODAL WINDOW----- -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
-          <svg class="modal-icon-close" width="11px" height="11px">
+        <button class="modal__btn-close" data-modal-close>
+          <svg class="modal__icon-close" width="11px" height="11px">
             <use href="./images/icons/icons.svg#close-icon"></use>
           </svg>
         </button>
         <form action="" class="modal-form">
-          <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="f-field">
-            <label class="f-label" for="name">Ім'я</label>
-            <div class="f-input-wrapper">
-              <input type="text" class="f-input" id="name">
-              <svg class="f-input-icon" width="18px" height="18px">
+          <p class="modal-form__title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="name">Ім'я</label>
+            <div class="modal-form__input-wrapper">
+              <input type="text" class="modal-form__input" id="name">
+              <svg class="modal-form__input-icon" width="18px" height="18px">
                 <use href="./images/icons/icons.svg#person"></use>
               </svg>
             </div>
           </div>
-          <div class="f-field">
-            <label class="f-label" for="phone">Телефон</label>
-            <div class="f-input-wrapper">
-              <input type="text" class="f-input" id="phone">
-              <svg class="f-input-icon" width="18px" height="18px">
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="phone">Телефон</label>
+            <div class="modal-form__input-wrapper">
+              <input type="text" class="modal-form__input" id="phone">
+              <svg class="modal-form__input-icon" width="18px" height="18px">
                 <use href="./images/icons/icons.svg#phone"></use>
               </svg>
             </div>
           </div>
-          <div class="f-field">
-            <label class="f-label" for="mail">Пошта</label>
-            <div class="f-input-wrapper">
-              <input type="text" class="f-input" id="mail">
-              <svg class="f-input-icon" width="18px" height="18px">
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="mail">Пошта</label>
+            <div class="modal-form__input-wrapper">
+              <input type="text" class="modal-form__input" id="mail">
+              <svg class="modal-form__input-icon" width="18px" height="18px">
                 <use href="./images/icons/icons.svg#mail"></use>
               </svg>
             </div>
           </div>
-          <div class="f-field">
-              <div class="f-input-wrapper">
-                <textarea class="f-input-area" name="" id="textarea" cols="30" rows="10" placeholder="Введіть текст"></textarea>
-                <label class="f-label" for="textarea">Коментар</label>
+          <div class="modal-form__field">
+              <div class="modal-form__input-wrapper">
+                <textarea class="modal-form__input-area" name="" id="textarea" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                <label class="modal-form__label" for="textarea">Коментар</label>
               </div>
           </div>
-          <div class="f-licence">
-            <input class="f-checkbox" type="checkbox">
-            <span class="f-checkbox-text">Погоджуюся з розсилкою та приймаю <a class="f-checkbox-link" href="">Умови договору</a></span>
+          <div class="modal-form__licence">
+            <input class="modal-form__checkbox" type="checkbox">
+            <span class="modal-form__checkbox-text">Погоджуюся з розсилкою та приймаю <a class="modal-form__checkbox-link" href="">Умови договору</a></span>
           </div>
-          <button class="f-btn" type="submit">Відправити</button>
+          <button class="modal-form__btn" type="submit">Відправити</button>
 
         </form>
       </div>
